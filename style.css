@@ -1,0 +1,30 @@
+body{
+	text-align:center;
+	font-family:Cousine;
+}
+
+.links{
+	display: grid;
+	justify-content: center;
+	grid-auto-flow: column;
+}
+
+.link{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 265px;
+	height: 215px;
+	margin: 10px;
+	background-color: rgba(23, 23, 23, 0.55);
+	border-radius: 10px;
+	border: 2px solid #bd93f9;
+	border: 3px solid skyblue;
+	border-radius: 2%;
+}
+
+@font-face{
+	font-family:Cousine;
+	src:url(./fonts/CousineNerdFont-Regular.ttf);
+}
