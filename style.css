@@ -1,6 +1,15 @@
 body{
+	background-image:url(img/wp.gif);
+	background-size:cover;
 	text-align:center;
 	font-family:Cousine;
+}
+
+.language{
+	text-decoration:none;
+	position: absolute;
+	right:5px;
+	top: 0;
 }
 
 .links{
@@ -12,19 +21,37 @@ body{
 .link{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content:center;
+	align-items:center;
 	width: 265px;
 	height: 215px;
 	margin: 10px;
-	background-color: rgba(23, 23, 23, 0.55);
-	border-radius: 10px;
-	border: 2px solid #bd93f9;
+	background-color: rgba(220, 237, 200, 0.55);
 	border: 3px solid skyblue;
 	border-radius: 2%;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.link:hover {
+	opacity: 0.6;
+}
+.link span{
+	font-family:tintin;
+	font-size:1.5em;
+	position: relative;
+	top: 3%;
 }
 
 @font-face{
 	font-family:Cousine;
 	src:url(./fonts/CousineNerdFont-Regular.ttf);
+}
+
+@font-face{
+	font-family:tintin;
+	src:url(./fonts/tintin_talking.ttf);
 }
