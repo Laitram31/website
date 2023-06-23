@@ -5,6 +5,11 @@ body{
 	font-family:Cousine;
 }
 
+.frame{
+	margin-top=10px;
+	margin-bottom=10px;
+}
+
 .language{
 	text-decoration:none;
 	font-size:1.2em;
@@ -84,6 +89,10 @@ a{
 .sub-sep{
 	border: none;
 	border-top: 3px dotted blue;
+}
+
+.footer{
+	color: #aaaaaa;
 }
 
 @font-face{
