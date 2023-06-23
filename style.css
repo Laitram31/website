@@ -19,13 +19,15 @@ body{
 }
 
 .links{
-	display: grid;
+	display: flex;
 	justify-content: center;
-	grid-auto-flow: column;
+	flex-wrap: wrap;
+	/*grid-auto-flow: column;*/
 }
 
 .link{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content:center;
 	align-items:center;
@@ -92,8 +94,41 @@ a{
 }
 
 .footer{
-	color: #aaaaaa;
+	animation-name: foot-anim;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
+
+@keyframes foot-anim{
+	0%{
+		color: #84008c;
+	}
+	12.5%{
+		color: #3f0098;
+	}
+	25%{
+		color: #46bebc;
+	}
+	37.5%{
+		color: #2f8a00;
+	}
+	50%{
+		color: #fdff00;
+	}
+	62.5%{
+		color: #f48a00;
+	}
+	75%{
+		color: #f00100;
+	}
+	87.5%{
+		color: #f366b1;
+	}
+	100%{
+		color: #84008c;
+	}
+}
+
 
 @font-face{
 	font-family:Cousine;
