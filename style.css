@@ -37,6 +37,8 @@ body{
 	background-color: rgba(220, 237, 200, 0.55);
 	border: 3px solid skyblue;
 	border-radius: 2%;
+	transition-property: opacity;
+	transition-duration: 0.3s;
 	/*animation-name: spin;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -51,6 +53,7 @@ a{
 .link:hover {
 	opacity: 0.6;
 }
+
 .link span{
 	font-family:tintin;
 	font-size:1.5em;
@@ -99,8 +102,18 @@ a{
 
 .footer{
 	animation-name: foot-anim;
-	animation-duration: 5s;
+	animation-duration: 6s;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes unopacitize{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0.6;
+	}
 }
 
 @keyframes spin{
