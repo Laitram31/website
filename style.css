@@ -13,8 +13,8 @@ body.index{
 }
 
 .frame{
-	margin-top=10px;
-	margin-bottom=10px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 
 .language{
@@ -124,6 +124,7 @@ a.text-link::after{
 }
 
 .footer{
+	margin:auto;
 	animation-name: foot-anim;
 	animation-duration: 6s;
 	animation-iteration-count: infinite;
