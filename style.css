@@ -22,6 +22,7 @@ body.index{
 	top: 2px;
 	background-color: rgba(220, 237, 200, 0.9);
 	border-radius: 3px;
+	z-index: -1;
 }
 
 br{
@@ -85,24 +86,20 @@ a.text-link::after{
 }
 
 .content-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-.container{
-	padding: 0 3%;
-	min-width: 93vw;
-	width: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 97vw);
+	gap: 20px;
 }
 
 .content{
-	margin: 3% 0;
-	margin-bottom: auto;
+	width: 94vw;
+	height: 88vh;
+	margin: 1%;
 	padding: 1%;
 	background-color: rgba(220, 237, 200, 0.80);
 	border-radius: 5px;
 	border: 5px dotted #b4d545;
+	overflow: auto;
 }
 
 .content h1, h2{
@@ -144,6 +141,7 @@ a.text-link::after{
 	animation-duration: 6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	z-index: -1;
 }
 
 .footer::before, .footer::after{
