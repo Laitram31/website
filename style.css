@@ -85,6 +85,10 @@ a.text-link::after{
 	top: 3%;
 }
 
+.marquee{
+	animation: marquee 10s linear infinite;
+}
+
 .content-container{
 	margin: 20px 10%;
 	display: grid;
@@ -133,8 +137,8 @@ a.text-link::after{
 }
 
 .footer{
-	position: fixed;
-	top: 5px;
+	/*position: fixed;
+	top: 5px;*/
 	margin: 0 auto;
 	background-color: rgba(220, 237, 200, 0.9);
 	border-radius: 3px;
@@ -143,7 +147,7 @@ a.text-link::after{
 	animation-duration: 6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 .footer::before, .footer::after{
@@ -187,6 +191,16 @@ a.text-link::after{
 		color: #84008c;
 	}
 }
+
+@keyframes marquee{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(-100%);
+	}
+}
+
 
 @keyframes heylisten{
 	50%{
