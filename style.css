@@ -100,7 +100,7 @@ a.text-link::after{
 .content{
 	width: auto;
 	height: auto;
-	margin: 1%;
+	margin: 5%;
 	padding: 1%;
 	background-color: rgba(220, 237, 200, 0.80);
 	border-radius: 5px;
