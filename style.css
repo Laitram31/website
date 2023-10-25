@@ -105,7 +105,7 @@ a.text-link::after{
 	background-color: rgba(220, 237, 200, 0.80);
 	border-radius: 5px;
 	border: 5px dotted #b4d545;
-	overflow: auto;
+	overflow-x: hidden;
 }
 
 .content h1, h2{
@@ -152,6 +152,10 @@ a.text-link::after{
 
 .footer::before, .footer::after{
 	content: "<<<";
+}
+
+.error{
+    animation: error 1s step-start 0s infinite;
 }
 
 @keyframes spin{
@@ -206,6 +210,13 @@ a.text-link::after{
 	50%{
 		transform: scale(1.05,1.05);
 	}
+}
+
+@keyframes error{
+    50%{
+	color: white;
+	background: black;
+    }
 }
 
 @font-face{
