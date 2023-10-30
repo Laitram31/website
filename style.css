@@ -87,6 +87,7 @@ a.text-link::after{
 
 .marquee{
 	animation: marquee 10s linear infinite;
+	overflow: hidden;
 }
 
 .content-container{
